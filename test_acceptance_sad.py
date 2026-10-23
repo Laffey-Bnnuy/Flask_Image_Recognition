@@ -1,4 +1,4 @@
-# test_acceptance_sad.py
+"""Acceptance tests for error handling."""
 
 import pytest
 from app import app

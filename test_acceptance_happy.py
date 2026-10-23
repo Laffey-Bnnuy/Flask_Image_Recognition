@@ -1,7 +1,7 @@
-# test_acceptance_happy.py
+"""Acceptance tests for the happy path."""
 
 from io import BytesIO
-import pytest
+
 
 def test_acceptance_successful_upload(client):
     """
