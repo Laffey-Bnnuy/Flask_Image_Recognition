@@ -6,9 +6,9 @@ from keras.models import load_model
 from model import preprocess_img, predict_result  # Adjust based on your structure
 
 # Load the model before tests run
-@pytest.fixture(scope="module")
-def model():
-    """Load the model once for all tests."""
+@pytest.fixture(name="model")
+def fixture_model():
+    """Load the model for tests."""
     model = load_model("digit_model.h5")  # Adjust path as needed
     return model
 
