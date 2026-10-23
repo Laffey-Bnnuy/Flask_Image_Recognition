@@ -27,15 +27,8 @@ def test_acceptance_successful_upload(client):
 
 
 def test_acceptance_valid_large_image(client):
-    """
-    Test Case: Upload of a Valid Large Image File
-    - Purpose: Check if the system accepts large but valid image files without errors and still provides predictions.
-    - Method:
-        - Create a mock large image file by repeating mock image data multiple times.
-        - Simulate a POST request to the `/prediction` route with the file.
-        - Assert the response status code is 200.
-        - Verify the presence of 'Prediction' in the response data.
-    """
+    """Purpose: Check if the system accepts large but valid image files
+      without errors and still provides predictions."""
     img_data = BytesIO(b"fake_large_image_data" * 1000)  # Simulating a large image
     img_data.name = "large_image.jpg"
 
