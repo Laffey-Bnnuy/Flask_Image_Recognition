@@ -1,7 +1,7 @@
 """Acceptance tests for edge cases."""
 
 from io import BytesIO
-import pytest
+
 
 
 # Helper function for concurrent image uploads

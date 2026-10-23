@@ -4,8 +4,8 @@ import pytest
 from app import app
 
 
-@pytest.fixture
-def client():
+@pytest.fixture(name="client")
+def fixture_client():
     """Fixture for the Flask test client."""
     with app.test_client() as client:
         yield client

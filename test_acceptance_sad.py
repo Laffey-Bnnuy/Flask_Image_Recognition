@@ -3,8 +3,8 @@
 import pytest
 from app import app
 
-@pytest.fixture
-def client():
+@pytest.fixture(name="client")
+def fixture_client():
     """
     Fixture for the Flask test client.
     - Purpose: Set up a test client for making requests to the Flask app during testing.
